@@ -339,6 +339,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = DB13B15B1849DEB70010F42D;
@@ -365,7 +366,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ ! -f \"./compile\" ]\nthen\nautoreconf -i -f -v\nif [ -f \"../ltmain.sh\" ]\nthen\necho \"fixing ltmain.sh for some reason\"\nmv ../ltmain.sh ./\nautoreconf -i -f -v\nfi\n/usr/bin/python generate-darwin-source-and-headers.py --only-ios\nfi";
+			shellScript = "if [ ! -f \"./compile\" ]\nthen\nautoreconf -i -f -v\nif [ -f \"../ltmain.sh\" ]\nthen\necho \"fixing ltmain.sh for some reason\"\nmv ../ltmain.sh ./\nautoreconf -i -f -v\nfi\n/usr/bin/python generate-darwin-source-and-headers.py --only-ios\nfi\n";
 		};
 		DB13B3061849E0490010F42D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
